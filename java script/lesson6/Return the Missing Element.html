@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Return the Missing Element</title>
+</head>
+<body>
+<script>
+    function getMissingElement(superImportantArray) {
+        superImportantArray.sort(function compare(a,b) {
+            return b-a;
+        });
+        for (i=0;i<superImportantArray.length; i++) {
+           if(superImportantArray[i] != i) {
+               return i;
+           }
+        }
+    }
+</script>
+</body>
+</html>
